@@ -18,3 +18,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+
+Route::resource('categories', 'CategoryController');
+
+Route::resource('posts', 'PostController');
+
+Route::resource('ads', 'AdsController');
+
+Route::resource('webpages', 'WebpageController');
+
+Route::resource('adsWebpages', 'ads_webpageController');
